@@ -33,7 +33,7 @@
 <main>
 <h1>FamilyFinance Privacy Policy</h1>
 <p class="meta">App: FamilyFinance (Android, package <code>com.familyfinance</code>)<br>
-Effective date: 23 September 2026</p>
+Effective date: 25 September 2026</p>
 
 <section class="summary" aria-labelledby="short">
 <h2 id="short">The short version</h2>
@@ -42,6 +42,7 @@ Effective date: 23 September 2026</p>
   <li>The developer runs no servers, has no analytics or crash reporting, and has no account system.</li>
   <li>Google sign-in is optional and only used to read and write your own spreadsheets.</li>
   <li><strong>SMS reading is optional and off by default.</strong> When you turn it on, bank/card/UPI alerts are read on your device to create expense entries. SMS content is never sent to the developer or anyone else.</li>
+  <li>The app checks with Google Play whether a newer version is available.</li>
   <li>The app shows ads through Google AdMob, which may collect device information such as the advertising ID to serve and measure ads.</li>
 </ul>
 </section>
@@ -53,6 +54,7 @@ Effective date: 23 September 2026</p>
   <li><a href="#google">Google account (optional)</a></li>
   <li><a href="#sms">SMS messages (optional, off by default)</a></li>
   <li><a href="#ads">Advertising (Google AdMob)</a></li>
+  <li><a href="#updates">App updates</a></li>
   <li><a href="#children">Children</a></li>
   <li><a href="#retention">Keeping and deleting your data</a></li>
   <li><a href="#security">Security</a></li>
@@ -71,11 +73,11 @@ Effective date: 23 September 2026</p>
 <p>The developer runs no servers and never receives this data. There is no analytics or crash-reporting software in the app, and no FamilyFinance account.</p>
 
 <h2 id="google">2. Google account (optional)</h2>
-<p>You only sign in with Google if you choose to store your workbooks in Google Sheets. The app then asks for these permissions:</p>
+<p>You only sign in with Google if you choose to store your workbooks in Google Sheets. The app then asks for one permission:</p>
 <ul>
-  <li><strong>drive.file</strong>: access only to files the app created or that you opened with it, not your whole Google Drive.</li>
-  <li><strong>spreadsheets</strong>: to read and write those spreadsheets.</li>
+  <li><strong>drive.file</strong>: lets the app create workbooks in your Google Drive and work with those files only. It gives no access to any other file in your Drive.</li>
 </ul>
+<p>The app also receives your Google account's name and email address from sign-in, to show which account is connected. They stay on your device.</p>
 <p>This access is used only to read and write your own spreadsheets. The data is not sent anywhere else, not sold, and not used for advertising.</p>
 <p>FamilyFinance's use of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
 <p>You can remove the app's access to your Google account at any time at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</p>
@@ -88,8 +90,9 @@ Effective date: 23 September 2026</p>
 <ul>
   <li>All reading happens on your device.</li>
   <li>The app ignores personal messages (from phone numbers), one-time passwords (OTPs) and promotional messages.</li>
-  <li>Only these transaction details are saved, and only into your own spreadsheet: date, amount, debit or credit, payment method, last four digits of the account or card, merchant, bank reference, and the sender name (for example “VM-HDFCBK”).</li>
+  <li>For each transaction, only these details are saved, into your own spreadsheet: date, amount, debit or credit, payment method, last four digits of the account or card, merchant, bank reference, and the sender name (for example “VM-HDFCBK”).</li>
   <li>If the app can't read a message and you choose to add it by hand, that message's text is put in the entry's notes.</li>
+  <li><strong>Kept on your phone to name later payments:</strong> from bill, loan EMI and shop order messages, the app keeps in its private storage the biller, lender or shop, the amount, the date and the last digits of the account or loan, so that a payment made later can be named after it (for example, a gas bill paid through a payment app, or a loan EMI collected by NACH). This is never uploaded. Bill and EMI reminders are forgotten after 60 days; shop matches once you accept or dismiss them.</li>
 </ul>
 <p><strong>What never happens:</strong> SMS content is never sent to the developer or to any third party, and is never used for advertising.</p>
 <p><strong>Turning it off:</strong> switch off “Read bank SMS” in the app's Settings at any time, or revoke the SMS permission in Android Settings.</p>
@@ -104,24 +107,28 @@ Effective date: 23 September 2026</p>
 </ul>
 <p>Learn more in Google's policy: <a href="https://policies.google.com/technologies/partner-sites">How Google uses information from sites or apps that use its services</a>.</p>
 
-<h2 id="children">5. Children</h2>
+<h2 id="updates">5. App updates</h2>
+<p>The app asks Google Play whether a newer version is available and, if you agree or the update is required, installs it through Google Play. This check is handled by Google Play; no data is sent to the developer.</p>
+
+<h2 id="children">6. Children</h2>
 <p>FamilyFinance is not directed at children under 13, and does not knowingly collect their data.</p>
 
-<h2 id="retention">6. Keeping and deleting your data</h2>
+<h2 id="retention">7. Keeping and deleting your data</h2>
 <p>The developer holds no user data, so there is nothing for the developer to delete. You control your data:</p>
 <ul>
   <li>Delete your .xlsx files or Google Sheets to delete the data in them.</li>
   <li>Remove workbooks in the app to delete the app's on-device copy.</li>
+  <li>Uninstall the app to delete everything it keeps on your device, including the bill, EMI and shop details it keeps to name later payments.</li>
 </ul>
 
-<h2 id="security">7. Security</h2>
+<h2 id="security">8. Security</h2>
 <p>Your data stays on your device and in your own Google account. Network traffic to Google uses HTTPS.</p>
 
-<h2 id="changes">8. Changes to this policy</h2>
+<h2 id="changes">9. Changes to this policy</h2>
 <p>This policy may be updated. When it is, the effective date at the top will change and the new version will be posted at this same address.</p>
 
-<h2 id="contact">9. Contact</h2>
-<p>Questions about this policy or your privacy? Email Viral Pattani at <a href="mailto:a.familty.finance.app@gmail.com">a.familty.finance.app@gmail.com</a>.</p>
+<h2 id="contact">10. Contact</h2>
+<p>Questions about this policy or your privacy? Email Viral Pattani at <a href="mailto:my.family.finance.app@gmail.com">my.family.finance.app@gmail.com</a>.</p>
 
 <footer>© 2026 FamilyFinance</footer>
 </main>
